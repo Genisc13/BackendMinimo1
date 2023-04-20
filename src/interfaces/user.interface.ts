@@ -13,6 +13,7 @@ export interface User extends Auth {
     roleUser: "admin" | "common" | "verified" | "business";
     privacyUser: boolean;
     deletedUser: boolean;
+    notificationsUser?:ObjectId[];
     followersUser?: ObjectId[];
     followedUser?: ObjectId[];
 }

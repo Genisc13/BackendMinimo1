@@ -1,7 +1,6 @@
 export interface Notification {
-
     nameNotification: string;
     numberNotification: number;
-    seenNotification:boolean;
+    seenNotification?: boolean;
     descriptionNotification?: string;
 }

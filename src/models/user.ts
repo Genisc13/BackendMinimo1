@@ -59,6 +59,10 @@ const UserSchema = new Schema<User>(
             type: Boolean,
             required:true,
         },
+        notificationsUser:{
+            type: [Schema.Types.ObjectId],
+            ref:'notifications',
+        },
         followersUser:{
             type: [Schema.Types.ObjectId],
             ref:'users',
