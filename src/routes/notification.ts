@@ -8,9 +8,9 @@ const router = Router(); //es el manejador de las rutas, las interpreta, con est
  * http://localhost:5432/items [GET]
  */
 router.get("/all", logMiddleware, getAvisos);
-router.get("/:idLocation", getAviso);
+router.get("/:idNotification", getAviso);
 router.post("/",postAviso);
-router.put("/:idLocation",updateAviso);
-router.delete("/:idLocation", deleteAviso);
+router.put("/:idNotification",updateAviso);
+router.delete("/:idNotification", deleteAviso);
 
 export {router};
